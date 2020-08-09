@@ -6,9 +6,14 @@ import './Style.css';
 
 function Header(){
 
+    function scroll(a){
+        const anchor = document.querySelector(a)
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
+
     return(
 
-        <section className="headerClass">
+        <section id="home" className="headerClass">
 
             <div className="container-fluid">
                 <div className="nextStyle">
@@ -17,10 +22,10 @@ function Header(){
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="ml-auto">
-                                <Nav.Link href="#intro" style={{color:"white"}}>Home</Nav.Link>
-                                <Nav.Link href="#link" style={{color:"white"}}>About</Nav.Link>
-                                <Nav.Link href="#link" style={{color:"white"}}>Projects</Nav.Link>
-                                <Nav.Link href="#link" style={{color:"white"}}>Contact</Nav.Link>                                
+                                <Nav.Link onClick={()=>{scroll('#home')}} style={{color:"white"}}>Home</Nav.Link>
+                                <Nav.Link onClick={()=>{scroll('#about')}} style={{color:"white"}}>About</Nav.Link>
+                                <Nav.Link onClick={()=>{scroll('#projects')}} style={{color:"white"}}>Projects</Nav.Link>
+                                <Nav.Link onClick={()=>{scroll('#contact')}} style={{color:"white"}}>Contact</Nav.Link>                                
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>

@@ -8,21 +8,10 @@
     background-position-y: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    position: relative;
-    z-index: 0;
     text-align: center;
-}
-.nextStyle{
-    background: rgba(7, 10, 12, 0.72);
-    position: absolute;
-    top: 0;
-    min-height: 100%;
-    left: 0;
-    right: 0;
-    z-index: -1;
+    padding-top: 2rem;
 }
 .navClass{
-    margin-top: 2rem;
     margin-right: 13rem;
 }
 .intro{
@@ -56,24 +45,24 @@
     background-position-x: right;
     background-position-y: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    z-index: 0;
+    background-attachment: fixed;    
     text-align: center;
-    min-height: 44rem;
+    min-height: 12rem;
+    padding-top: 5rem;
 }
-.secBg{
-    background: rgba(7, 10, 12, 0.72);
-    position: absolute;
-    top: 0;
-    min-height: 100%;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
+
 .cardDiv{
     background: rgba(255, 255, 255, 0.1);
     min-height: 6rem;
     min-width: 6rem;
     padding: 2rem;
+    
+}
+.cardDiv:hover{
+    background : #000;
+    opacity : 0.8;
+    transition: ease-out 0.4s;
+}
+.proRow{
+    min-height: 24rem;
 }

@@ -3,21 +3,12 @@ import React,{Component} from 'react';
 
 class SecProj extends Component{
 
-    render(){
-
-        function enterBackground(e){
-            e.target.style.background = '#000';
-            e.target.style.opacity = 0.8;
-        }
-        function leaveBackground(e){
-            e.target.style.background='rgba(255, 255, 255, 0.1)';
-        }
-        
+    render(){       
 
         const pro = this.props.project.map((itm)=>{
             return(                
                 <div className="col-12 col-md-3" style={{'margin-bottom':'2rem'}}>
-                    <div className="cardDiv" onMouseEnter={enterBackground} onMouseLeave={leaveBackground} onClick={()=>{window.open(itm.url)}}>                        
+                    <div className="cardDiv"  onClick={()=>{window.open(itm.url)}}>                        
                         <h3>{itm.name}</h3>
                         <span>{itm.platform}</span>
                         <p><br/>{itm.description}</p>
@@ -29,8 +20,8 @@ class SecProj extends Component{
         return(
 
             <div className="container-fluid">                    
-            <h1 style={{'margin':'5rem'}}>Projects</h1>                
-                <div className="row" style={{'justify-content': 'center'}}>                    
+            <h1 style={{'padding-bottom':'5rem'}}>Projects</h1>                
+                <div className="row proRow" style={{'justify-content': 'center'}}>                    
                     {pro}
                 </div>
             </div>

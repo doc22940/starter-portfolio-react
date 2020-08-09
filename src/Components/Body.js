@@ -18,7 +18,7 @@ class Body extends Component{
 
         return(
             <div>
-            <section className="aboutMe">
+            <section id="about" className="aboutMe">
                 <div className="container-fluid p-0 pl-4">
                         <h1  style={{'text-align': 'center'}} >ABOUT ME</h1>
                     <div className="row aboutRow col-12 mt-5">
@@ -36,7 +36,7 @@ class Body extends Component{
                 </div>
             </section>
 
-            <section className="projectSection">
+            <section id="projects" className="projectSection">
                 <div className="secBg">
                 <SecProj project={this.state.proj}/>
                 </div>
