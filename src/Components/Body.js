@@ -20,10 +20,10 @@ class Body extends Component{
             <div>
             <section id="about" className="aboutMe">
                 <div className="container-fluid p-0 pl-4">
-                        <h1  style={{'text-align': 'center'}} >ABOUT ME</h1>
+                        <h1  style={{textAlign: 'center',fontSize:'3rem'}} >ABOUT ME</h1>
                     <div className="row aboutRow col-12 mt-5">
                         <div className="aboutPic col-12 col-md-3 ml-auto">
-                        <img src={Propic} width="100%" height="100%"/>
+                        <img src={Propic} width="100%" height="100%" alt="Pro-pic"/>
                         </div>
                         <div className="aboutContent col-12 col-md-6">
                         <p>I'm currently pursuing B.tech in KMEA Engineering College, Edathala.<br/> 
@@ -37,9 +37,7 @@ class Body extends Component{
             </section>
 
             <section id="projects" className="projectSection">
-                <div className="secBg">
                 <SecProj project={this.state.proj}/>
-                </div>
             </section>
             </div>
         );

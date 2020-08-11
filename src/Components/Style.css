@@ -2,19 +2,35 @@
 
 .headerClass{    
     height: 45.2rem;
-    background: url(./images/1.jpg);
+    background: linear-gradient(rgba(7, 10, 12, 0.72),rgba(7, 10, 12, 0.72)),url(./images/1.jpg);
     background-size: cover;
     background-position-x: right;
     background-position-y: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    text-align: center;
     padding-top: 2rem;
 }
 .navClass{
     margin-right: 13rem;
 }
+#navhome:hover{
+    font-size: 1.1rem;
+    transition: all .2s ease-out;
+}
+#navabout:hover{
+    font-size: 1.1rem;
+    transition: all .2s ease-out;
+}
+#navprojects:hover{
+    font-size: 1.1rem;
+    transition: all .2s ease-out;
+}
+#navcontact:hover{
+    font-size: 1.1rem;
+    transition: all .2s ease-out;
+}
 .intro{
+    text-align: center;
     margin-top: 10rem;    
 }
 
@@ -22,8 +38,6 @@
     background: linear-gradient(rgb(63, 74, 118), rgb(13, 22, 72));
     padding-top: 5rem;
     padding-bottom: 5rem;
-    min-height: 1rem;
-    overflow: hidden;
 }
 .aboutRow{     
     min-height: 24rem;
@@ -40,7 +54,7 @@
     font-style: normal;
 }
 .projectSection{
-    background: url(./images/1.jpg);
+    background: linear-gradient(rgba(7, 10, 12, 0.72),rgba(7, 10, 12, 0.72)),url(./images/1.jpg);
     background-size: cover;
     background-position-x: right;
     background-position-y: center;
@@ -56,6 +70,7 @@
     min-height: 6rem;
     min-width: 6rem;
     padding: 2rem;
+    margin-right: 1rem;
     
 }
 .cardDiv:hover{
@@ -65,4 +80,65 @@
 }
 .proRow{
     min-height: 24rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+}
+.projectIcons{
+    width: 35%;
+}
+.contactSection{
+    background: linear-gradient(rgb(63, 74, 118), rgb(13, 22, 72));
+    padding: 3em;
+    padding-bottom: 5rem;
+}
+.contactTitle{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+.contactDescription{
+    margin-bottom: 2rem;
+}
+.footerSec{
+    background: #222222;
+    min-height: 2rem;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+}
+.socialFooter{
+    justify-content: center;
+    min-height: 2rem;
+}
+.footer{
+    justify-content: center;
+    display: grid;
+}
+.arrowTop{
+    display: grid;
+    font-size: 1.3rem;
+    justify-content: center;
+    min-height: 4rem;
+    width: 20%;
+    margin-left: 7rem;
+    color: white;
+}
+.arrowTop:hover{
+    color: white;
+    font-size: 2.1rem;    
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+.icon{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: white;
+}
+.icon:hover{
+    color: #35a22c ;
+    transition: all .3s ease-out;
+    text-decoration: none;
+}
+.footerText{
+    color: grey;
 }

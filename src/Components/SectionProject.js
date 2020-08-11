@@ -5,14 +5,17 @@ class SecProj extends Component{
 
     render(){       
 
-        const pro = this.props.project.map((itm)=>{
+        const pro = this.props.project.map((itm,k)=>{
             return(                
-                <div className="col-12 col-md-3" style={{'margin-bottom':'2rem'}}>
-                    <div className="cardDiv"  onClick={()=>{window.open(itm.url)}}>                        
+                <div key={k} className="col-12 col-md-3 cardDiv" style={{marginBottom:'2rem'}}>
+                    <a href={itm.url} target="_blank" style={{color:'white',textDecoration:'none'}}>
+                    <div className="cardIn">
+                        <img className="projectIcons" src={itm.image} alt="Logo"/>                        
                         <h3>{itm.name}</h3>
                         <span>{itm.platform}</span>
                         <p><br/>{itm.description}</p>
                     </div>
+                    </a>
                 </div>
             );
         });
@@ -20,8 +23,8 @@ class SecProj extends Component{
         return(
 
             <div className="container-fluid">                    
-            <h1 style={{'padding-bottom':'5rem'}}>Projects</h1>                
-                <div className="row proRow" style={{'justify-content': 'center'}}>                    
+            <h1 style={{paddingBottom:'5rem',fontSize:"3rem"}}>Projects</h1>                
+                <div className="row proRow">                    
                     {pro}
                 </div>
             </div>

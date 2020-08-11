@@ -1,19 +1,23 @@
+import vspic from './images/vs.png';
+import rjspic from './images/rjs.png';
+
+
 export const Projects = [
 
     {
-        platform: 'Visual Studio (C#)',
+        platform: 'Windows Forms (C#)',
         name: 'Exam Cell',
-        image: 'src/Components/images/1.jpg',
+        image: vspic,
         url:'https://github.com/arifmohammedpf/Exam-Management',
-        description: 'blablbla blablbal lalab lalblablablablabl ablablbalbalba'
+        description: 'A Windows Form Application Project, developed for Exam Cell Department of KMEA Engineering College, Edathala.'
     },
 
     {
         platform: 'React',
         name: 'Portfolio',
-        image: 'src/Components/images/1.jpg',
+        image: rjspic,
         url:'https://github.com/arifmohammedpf/myPortfolio_React',
-        description: 'blablblablablballal ablalb lablablablablablablbalbalba'
+        description: 'A Portfolio Web Application using React'
     }
 
 ]
