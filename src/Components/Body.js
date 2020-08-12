@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Style.css';
-import Propic from './images/1.jpg';
+import propic from './images/ProPic1.jpg'
 import {Projects} from './Projects';
 import SecProj from './SectionProject';
 
@@ -22,8 +22,8 @@ class Body extends Component{
                 <div className="container-fluid p-0 pl-4">
                         <h1  style={{textAlign: 'center',fontSize:'3rem'}} >ABOUT ME</h1>
                     <div className="row aboutRow col-12 mt-5">
-                        <div className="aboutPic col-12 col-md-3 ml-auto">
-                        <img src={Propic} width="100%" height="100%" alt="Pro-pic"/>
+                        <div className="aboutPic col-12 col-md-4 col-xl-3 ml-auto">
+                        <img src={propic} width="100%" height="100%" alt="Pro-pic"/>
                         </div>
                         <div className="aboutContent col-12 col-md-6">
                         <p>I'm currently pursuing B.tech in KMEA Engineering College, Edathala.<br/> 

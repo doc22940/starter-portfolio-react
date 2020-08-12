@@ -8,7 +8,7 @@ class SecProj extends Component{
         const pro = this.props.project.map((itm,k)=>{
             return(                
                 <div key={k} className="col-12 col-md-3 cardDiv" style={{marginBottom:'2rem'}}>
-                    <a href={itm.url} target="_blank" style={{color:'white',textDecoration:'none'}}>
+                    <a href={itm.url} rel="noopener noreferrer" target="_blank" style={{color:'white',textDecoration:'none'}}>
                     <div className="cardIn">
                         <img className="projectIcons" src={itm.image} alt="Logo"/>                        
                         <h3>{itm.name}</h3>
