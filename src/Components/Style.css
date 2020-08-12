@@ -82,6 +82,7 @@
     min-height: 24rem;
     padding-bottom: 5rem;
     justify-content: center;
+    padding-left: 1rem;
 }
 .projectIcons{
     width: 35%;
@@ -100,6 +101,30 @@
 .contactDescription{
     margin-bottom: 2rem;
 }
+
+#errorPara{
+    color: #bf1650;
+}      
+#errorPara::before {
+    display: inline;
+    content: "⚠ ";
+}
+button[type="submit"]{
+  background: rgb(43, 40, 241);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+}
+button[type="submit"]:hover{
+  background: rgb(14, 30, 121);
+}
+button[type="submit"]:active{
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
 .footerSec{
     background: #222222;
     min-height: 2rem;

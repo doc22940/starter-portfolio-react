@@ -1,80 +1,62 @@
-import React,{Component} from 'react';
+import React from 'react';
 import {Form,Button} from 'react-bootstrap';
+import {useForm} from 'react-hook-form';
+  
 
-const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
+function ContactForms() {
 
-class ContactForms extends Component{
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
 
-    constructor(props) {
-        super(props);
-    
-        this.state = {
-            name:'',
-            email:'',
-            message:''          
+    const { register, handleSubmit, errors } = useForm();
+
+    const onSubmit = (data, e) => {
+        const formDatas = {
+            name: data.name,
+            email: data.email,
+            message: data.message
         }
-    }
-
-    changeHandler = e =>{
-        this.setState({[e.target.name]:e.target.value})
-    }
-
-    submitHandler = e =>{
-        e.preventDefault()
 
         fetch('/', {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...this.state })
+            body: encode({ "form-name": "contact", ...formDatas })
         })
-        .then(() => {
-            alert("Success!");
-            this.resetForm()
-        })
-        .catch(error => alert(error));
+            .then(() => {
+                alert("Success!");
+                e.target.reset();
+            })
+            .catch(error => alert(error));
     }
-    
-    resetForm(){
-    
-        this.setState({name: '', email: '', message: ''})
-     }
 
-    render(){
-        
-        const {name,email,message} = this.state
 
-        return(
+    return (
 
-            <div className="formDiv col-12 col-md-7">
-                <Form onSubmit={this.submitHandler}>
-                    <Form.Group>
+        <div className="formDiv col-12 col-md-7">
+            <Form onSubmit={handleSubmit(onSubmit)}>
+                <Form.Group>
                     <Form.Label>Name</Form.Label>
-        <Form.Control name="name" value={name} onChange={this.changeHandler} placeholder="Your Name" />
-                    </Form.Group>
-      <Form.Group>
-        <Form.Label>Email address</Form.Label>  
-        <Form.Control name='email' value={email} onChange={this.changeHandler} type="email" placeholder="Your email" />
-        <Form.Text className="text-muted">
-          I'll never share your email with anyone else.
-        </Form.Text>
-      </Form.Group>
-      <Form.Group>
-        <Form.Control name='message' value={message} onChange={this.changeHandler} as="textarea" rows="3" placeholder="Write..." />
-      </Form.Group>
-    
-      
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
-            </div>
-    
-        ); 
-    }       
-
+                    <Form.Control name="name" placeholder="Your Name" ref={register({ required: true, maxLength: 78 })} />
+                    {errors.name && <p id="errorPara">This is required</p>}
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control name='email' type="email" placeholder="Your email" ref={register({ required: true })} />
+                    <Form.Text className="text-muted">
+                        I'll never share your email with anyone else.
+                    </Form.Text>
+                    {errors.email && <p id="errorPara">This is required</p>}
+                </Form.Group>
+                <Form.Group>
+                    <Form.Control name='message' as="textarea" rows="3" placeholder="Write..." ref={register({ required: true })} />
+                    {errors.message && <p id="errorPara">This is required</p>}
+                </Form.Group>
+                <Button type="submit">Submit</Button>
+            </Form>
+        </div>
+    );
 }
 export default ContactForms;
