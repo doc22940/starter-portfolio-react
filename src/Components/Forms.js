@@ -1,6 +1,12 @@
 import React,{Component} from 'react';
 import {Form,Button} from 'react-bootstrap';
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
 class ContactForms extends Component{
 
     constructor(props) {
@@ -11,8 +17,6 @@ class ContactForms extends Component{
             email:'',
             message:''          
         }
-        this.changeHandler = this.changeHandler.bind(this);
-        this.submitHandler = this.submitHandler.bind(this);
     }
 
     changeHandler = e =>{
@@ -22,30 +26,22 @@ class ContactForms extends Component{
     submitHandler = e =>{
         e.preventDefault()
 
-        fetch('https://script.google.com/macros/s/AKfycbzN8eHzBwvmKZJRhP1_u3e_jQwjsLhMOCPXPQEAlNrE4tfWEYbF/exec', {
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json'
-            },
-            method: 'POST', // or 'PUT'
-            body: JSON.stringify(this.state),
-        }).then((response) => { 
-            if (!response.ok) {
-                return Promise.reject('Our servers are having issues! We couldn\'t send your feedback!');
-            }
-            response.json()
-        }).then(() => {
-            alert('Success!');
-        }).catch((error) => {
-            alert('Our servers are having issues! We couldn\'t send your feedback!', error);
-        })       
+        fetch('/', {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+        })
+        .then(() => {
+            alert("Success!");
+            this.resetForm()
+        })
+        .catch(error => alert(error));
     }
-
+    
     resetForm(){
     
         this.setState({name: '', email: '', message: ''})
      }
-    
 
     render(){
         
@@ -54,7 +50,7 @@ class ContactForms extends Component{
         return(
 
             <div className="formDiv col-12 col-md-7">
-                <Form id='submit-form' onSubmit={this.submitHandler}>
+                <Form onSubmit={this.submitHandler}>
                     <Form.Group>
                     <Form.Label>Name</Form.Label>
         <Form.Control name="name" value={name} onChange={this.changeHandler} placeholder="Your Name" />
