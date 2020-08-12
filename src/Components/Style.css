@@ -13,20 +13,31 @@
 .navClass{
     margin-right: 13rem;
 }
-#navhome:hover{
+.navToggler{
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+#navabout{
+    color: white;
     font-size: 1.1rem;
-    transition: all .2s ease-out;
+}
+#navprojects{
+    color: white;
+    font-size: 1.1rem;
+}
+#navcontact{
+    color: white;
+    font-size: 1.1rem;
 }
 #navabout:hover{
-    font-size: 1.1rem;
+    color: rgb(13, 22, 72);
     transition: all .2s ease-out;
 }
 #navprojects:hover{
-    font-size: 1.1rem;
+    color: rgb(13, 22, 72);
     transition: all .2s ease-out;
 }
 #navcontact:hover{
-    font-size: 1.1rem;
+    color: rgb(13, 22, 72);
     transition: all .2s ease-out;
 }
 .intro{
@@ -54,7 +65,7 @@
     font-style: normal;
 }
 .projectSection{
-    background: linear-gradient(rgba(7, 10, 12, 0.72),rgba(7, 10, 12, 0.72)),url('https://c4.wallpaperflare.com/wallpaper/455/346/398/macro-blur-keyboard-laptop-wallpaper-preview.jpg');
+    background: linear-gradient(rgba(7, 10, 12, 0.836),rgba(7, 10, 12, 0.836)),url('https://c4.wallpaperflare.com/wallpaper/455/346/398/macro-blur-keyboard-laptop-wallpaper-preview.jpg');
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
@@ -82,7 +93,8 @@
     min-height: 24rem;
     padding-bottom: 5rem;
     justify-content: center;
-    padding-left: 1rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
 }
 .projectIcons{
     width: 35%;
@@ -160,7 +172,7 @@ button[type="submit"]:active{
     color: white;
 }
 .icon:hover{
-    color: #35a22c ;
+    color: rgb(53, 51, 209) ;
     transition: all .3s ease-out;
     text-decoration: none;
 }
