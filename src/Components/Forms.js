@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import {Form,Button} from 'react-bootstrap';
-import axios from 'axios';
 
 class ContactForms extends Component{
 
@@ -10,8 +9,10 @@ class ContactForms extends Component{
         this.state = {
             name:'',
             email:'',
-            messsage:''          
+            message:''          
         }
+        this.changeHandler = this.changeHandler.bind(this);
+        this.submitHandler = this.submitHandler.bind(this);
     }
 
     changeHandler = e =>{
@@ -21,15 +22,29 @@ class ContactForms extends Component{
     submitHandler = e =>{
         e.preventDefault()
 
-        
-        axios.post('https://script.google.com/macros/s/AKfycbzN8eHzBwvmKZJRhP1_u3e_jQwjsLhMOCPXPQEAlNrE4tfWEYbF/exec',this.state)
-            .then(response=>{
-                alert(response)
-            })
-            .catch(error=>{
-                alert(error)
-            })
+        fetch('https://script.google.com/macros/s/AKfycbzN8eHzBwvmKZJRhP1_u3e_jQwjsLhMOCPXPQEAlNrE4tfWEYbF/exec', {
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: 'POST', // or 'PUT'
+            body: JSON.stringify(this.state),
+        }).then((response) => { 
+            if (!response.ok) {
+                return Promise.reject('Our servers are having issues! We couldn\'t send your feedback!');
+            }
+            response.json()
+        }).then(() => {
+            alert('Success!');
+        }).catch((error) => {
+            alert('Our servers are having issues! We couldn\'t send your feedback!', error);
+        })       
     }
+
+    resetForm(){
+    
+        this.setState({name: '', email: '', message: ''})
+     }
     
 
     render(){
@@ -39,7 +54,7 @@ class ContactForms extends Component{
         return(
 
             <div className="formDiv col-12 col-md-7">
-                <Form onSubmit={this.submitHandler}>
+                <Form id='submit-form' onSubmit={this.submitHandler}>
                     <Form.Group>
                     <Form.Label>Name</Form.Label>
         <Form.Control name="name" value={name} onChange={this.changeHandler} placeholder="Your Name" />
