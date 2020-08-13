@@ -31,11 +31,13 @@ class Body extends Component{
                         </Fade>
                         </div>
                         <div className="aboutContent col-12 col-md-6">
+                        <Fade right >
                         <p>I'm currently pursuing B.tech in KMEA Engineering College, Edathala.<br/> 
                             Even though I'm not good in academics; by watching tutorials<br/> and practicing codes, 
                             I always try to become a good developer.<br/> Till now I have gained knowledge in Android Studio (Java), 
                             <br/>Windows Forms (C#) using Visual Studio and SQL Management Studio,<br/>HTML5, Bootstrap, CSS, JavaScript. 
                             As of now, I'm learning React, <br/>and this website is my first practice.</p>
+                        </Fade>
                         </div>
                     </div>
                 </div>
