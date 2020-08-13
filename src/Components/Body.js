@@ -4,6 +4,8 @@ import './Style.css';
 import propic from './images/ProPic1.jpg'
 import {Projects} from './Projects';
 import SecProj from './SectionProject';
+import Fade from 'react-reveal/Fade';
+
 
 class Body extends Component{
 
@@ -19,11 +21,14 @@ class Body extends Component{
         return(
             <div>
             <section id="about" className="aboutMe">
+                <Fade duration={2000}>
                 <div className="container-fluid p-0 pl-4">
                         <h1  style={{textAlign: 'center',fontSize:'3rem'}} >ABOUT ME</h1>
                     <div className="row aboutRow col-12 mt-5">
                         <div className="aboutPic col-12 col-md-4 col-xl-3 ml-auto">
-                        <img src={propic} width="100%" height="100%" alt="Pro-pic"/>
+                        <Fade duration={1500} left cascade>
+                        <img style={{borderRadius:'1.5rem',boxShadow: '0 1rem 3rem rgba(4, 4, 6, 0.82)'}} src={propic} width="100%" height="100%" alt="Arif"/>
+                        </Fade>
                         </div>
                         <div className="aboutContent col-12 col-md-6">
                         <p>I'm currently pursuing B.tech in KMEA Engineering College, Edathala.<br/> 
@@ -34,6 +39,7 @@ class Body extends Component{
                         </div>
                     </div>
                 </div>
+                </Fade>
             </section>
 
             <section id="projects" className="projectSection">

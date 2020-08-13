@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 function Footer(){
 
@@ -9,6 +10,7 @@ function Footer(){
     return(
 
         <section className="footerSec">
+            <Fade bottom duration={1400}>
             <footer className="footer">
                 <span className="arrowTop" onClick={scrollTop}><i className='fas fa-angle-double-up'></i></span>
                 <div className="row socialFooter">
@@ -20,6 +22,7 @@ function Footer(){
                 <hr width='30%' style={{borderTop:'2px solid hsla(0,0%,100%,.1)'}}/>
                 <p className="footerText">© 2020 - Developed by Arif Mohammed</p>
             </footer>
+            </Fade>
         </section>
 
     );

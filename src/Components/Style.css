@@ -29,15 +29,15 @@
     font-size: 1.1rem;
 }
 #navabout:hover{
-    color: rgb(13, 22, 72);
+    color: lemonchiffon;
     transition: all .2s ease-out;
 }
 #navprojects:hover{
-    color: rgb(13, 22, 72);
+    color: lemonchiffon;
     transition: all .2s ease-out;
 }
 #navcontact:hover{
-    color: rgb(13, 22, 72);
+    color: lemonchiffon;
     transition: all .2s ease-out;
 }
 .intro{
@@ -53,7 +53,7 @@
 .aboutRow{     
     min-height: 24rem;
 }
-.aboutPic{    
+.aboutPic{   
     margin-bottom: 2rem;
     margin-right: 5rem;
 }
@@ -128,7 +128,7 @@ button[type="submit"]{
   border: none;
 }
 button[type="submit"]:hover{
-  background: rgb(14, 30, 121);
+  background: rgb(53, 64, 124);
 }
 button[type="submit"]:active{
   transition: 0.3s all;
@@ -172,7 +172,7 @@ button[type="submit"]:active{
     color: white;
 }
 .icon:hover{
-    color: rgb(53, 51, 209) ;
+    color: lime ;
     transition: all .3s ease-out;
     text-decoration: none;
 }

@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import Fade from 'react-reveal/Fade';
 
 
 class SecProj extends Component{
@@ -23,10 +24,12 @@ class SecProj extends Component{
         return(
 
             <div className="container-fluid">                    
-            <h1 style={{paddingBottom:'5rem',fontSize:"3rem"}}>Projects</h1>                
+            <Fade duration={2000} ><h1 style={{paddingBottom:'5rem',fontSize:"3rem"}}>Projects</h1></Fade>                
+                <Fade left cascade>
                 <div className="row proRow">                    
                     {pro}
                 </div>
+                </Fade>
             </div>
 
         );

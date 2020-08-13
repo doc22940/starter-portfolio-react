@@ -1,6 +1,7 @@
 import React from 'react';
 import {Form,Button} from 'react-bootstrap';
 import {useForm} from 'react-hook-form';
+import Fade from 'react-reveal/Fade';
   
 
 function ContactForms() {
@@ -36,6 +37,7 @@ function ContactForms() {
     return (
 
         <div className="formDiv col-12 col-md-7">
+            <Fade right cascade>
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <Form.Group>
                     <Form.Label>Name</Form.Label>
@@ -56,6 +58,7 @@ function ContactForms() {
                 </Form.Group>
                 <Button type="submit">Submit</Button>
             </Form>
+            </Fade>
         </div>
     );
 }
