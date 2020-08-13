@@ -1,18 +1,18 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar,Nav} from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import './Style.css';
 import Fade from 'react-reveal/Fade';
 
 
-function Header(){
+function Header() {
 
-    function scroll(a){
+    function scroll(a) {
         const anchor = document.querySelector(a)
         anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
     }
 
-    return(
+    return (
 
         <section id="home" className="headerClass">
 
@@ -29,15 +29,14 @@ function Header(){
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
-                </div>  
+                </div>
 
-                
                 <Fade delay={1300} cascade>
                     <div className="intro">
                         <h1 className="introHead" style={{ fontSize: '3.5rem' }}>Hello, I'm Arif Mohammed</h1>
                         <h4>Developer</h4>
                     </div>
-                </Fade>            
+                </Fade>
             </div>
 
         </section>
