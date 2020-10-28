@@ -1,190 +1,188 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
 
-.headerClass{    
-    height: 45.2rem;
-    background: linear-gradient(rgba(7, 10, 12, 0.72),rgba(7, 10, 12, 0.72)),url('./images/homeBg.jpg');
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    padding-top: 2rem;
-}
-.navClass{
-    margin-right: 13rem;
-}
-.navToggler{
-    background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-}
-#navabout{
-    color: white;
-    font-size: 1.1rem;
-}
-#navprojects{
-    color: white;
-    font-size: 1.1rem;
-}
-#navcontact{
-    color: white;
-    font-size: 1.1rem;
-}
-#navabout:hover{
-    color: lemonchiffon;
-    transition: all .2s ease-out;
-}
-#navprojects:hover{
-    color: lemonchiffon;
-    transition: all .2s ease-out;
-}
-#navcontact:hover{
-    color: lemonchiffon;
-    transition: all .2s ease-out;
-}
-.intro{
-    text-align: center;
-    margin-top: 10rem;    
+.headerClass {
+  height: 100vh;
+  background: linear-gradient(rgba(7, 10, 12, 0.72), rgba(7, 10, 12, 0.72)),
+    url("./images/homeBg.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding-top: 2rem;
 }
 
-.aboutMe{    
-    background: linear-gradient(rgb(63, 74, 118), rgb(13, 22, 72));
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+.navToggler {
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
-.aboutRow{     
-    min-height: 24rem;
+#navabout {
+  color: white;
+  font-size: 1.1rem;
 }
-.aboutPic{   
-    margin-bottom: 2rem;
-    margin-right: 5rem;
+#navprojects {
+  color: white;
+  font-size: 1.1rem;
 }
-#profPic{
-    width: 100%; 
-    height: 100%; 
-    box-shadow: 0 1rem 3rem rgba(4, 4, 6, 0.82);
-    border-radius: 1.5rem;
+#navcontact {
+  color: white;
+  font-size: 1.1rem;
 }
-.aboutContent{    
-        
-    align-self: center;
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+#navabout:hover {
+  color: lemonchiffon;
+  transition: all 0.2s ease-out;
 }
-.projectSection{
-    background: linear-gradient(rgba(7, 10, 12, 0.836),rgba(7, 10, 12, 0.836)),url('https://c4.wallpaperflare.com/wallpaper/455/346/398/macro-blur-keyboard-laptop-wallpaper-preview.jpg');
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;    
-    text-align: center;
-    min-height: 12rem;
-    padding-top: 5rem;
+#navprojects:hover {
+  color: lemonchiffon;
+  transition: all 0.2s ease-out;
 }
-#projectTitle{
-    padding-bottom: 5rem;
-    font-size: 3rem;
+#navcontact:hover {
+  color: lemonchiffon;
+  transition: all 0.2s ease-out;
 }
-.cardDiv{
-    background: rgba(255, 255, 255, 0.1);
-    min-height: 6rem;
-    min-width: 6rem;
-    padding: 2rem;
-    margin-right: 1rem;
-    
-}
-.cardDiv:hover{
-    background : #000;
-    opacity : 0.8;
-    transition: ease-out 0.4s;
-}
-.proRow{
-    min-height: 24rem;
-    padding-bottom: 5rem;
-    justify-content: center;
-    padding-left: 3rem;
-    padding-right: 2rem;
-}
-.projectIcons{
-    width: 35%;
-}
-.contactSection{
-    background: linear-gradient(rgb(63, 74, 118), rgb(13, 22, 72));
-    padding: 3em;
-    padding-bottom: 5rem;
-}
-.contactTitle{
-    font-size: 3rem;
-    text-align: center;
-    padding-bottom: 2rem;
-    margin-top: 2rem;
-}
-.contactDescription{
-    margin-bottom: 2rem;
+.intro {
+  text-align: center;
+  margin-top: 10rem;
 }
 
-#errorPara{
-    color: #bf1650;
-}      
+.aboutMe {
+  background: linear-gradient(rgb(63, 74, 118), rgb(13, 22, 72));
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.aboutRow {
+  min-height: 24rem;
+}
+.aboutPic {
+  margin-bottom: 2rem;
+  margin-right: 5rem;
+}
+#profPic {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 1rem 3rem rgba(4, 4, 6, 0.82);
+  border-radius: 1.5rem;
+}
+.aboutContent {
+  align-self: center;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+.projectSection {
+  background: linear-gradient(rgba(7, 10, 12, 0.836), rgba(7, 10, 12, 0.836)),
+    url("https://c4.wallpaperflare.com/wallpaper/455/346/398/macro-blur-keyboard-laptop-wallpaper-preview.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  min-height: 12rem;
+  padding-top: 5rem;
+}
+#projectTitle {
+  padding-bottom: 5rem;
+  font-size: 3rem;
+}
+.cardDiv {
+  background: rgba(255, 255, 255, 0.1);
+  min-height: 6rem;
+  min-width: 6rem;
+  padding: 2rem;
+  margin-right: 1rem;
+}
+.cardDiv:hover {
+  background: #000;
+  opacity: 0.8;
+  transition: ease-out 0.4s;
+}
+.proRow {
+  min-height: 24rem;
+  padding-bottom: 5rem;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+.projectIcons {
+  width: 35%;
+}
+.contactSection {
+  background: linear-gradient(rgb(63, 74, 118), rgb(13, 22, 72));
+  padding: 3em;
+  padding-bottom: 5rem;
+}
+.contactTitle {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+.contactDescription {
+  margin-bottom: 2rem;
+}
+
+#errorPara {
+  color: #bf1650;
+}
 #errorPara::before {
-    display: inline;
-    content: "⚠ ";
+  display: inline;
+  content: "⚠ ";
 }
-button[type="submit"]{
+button[type="submit"] {
   background: rgb(43, 40, 241);
   color: white;
   text-transform: uppercase;
   border: none;
 }
-button[type="submit"]:hover{
+button[type="submit"]:hover {
   background: rgb(53, 64, 124);
 }
-button[type="submit"]:active{
+button[type="submit"]:active {
   transition: 0.3s all;
   transform: translateY(3px);
   border: 1px solid transparent;
   opacity: 0.8;
 }
 
-.footerSec{
-    background: #222222;
-    min-height: 2rem;
-    padding-bottom: 8rem;
-    padding-top: 8rem;
+.footerSec {
+  background: #222222;
+  min-height: 2rem;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
 }
-.socialFooter{
-    justify-content: center;
-    min-height: 2rem;
+.socialFooter {
+  justify-content: center;
+  min-height: 2rem;
 }
-.footer{
-    justify-content: center;
-    display: grid;
+.footer {
+  justify-content: center;
+  display: grid;
 }
-.arrowTop{
-    display: grid;
-    font-size: 1.3rem;
-    justify-content: center;
-    min-height: 4rem;
-    width: 20%;
-    margin-left: 7rem;
-    color: white;
+.arrowTop {
+  display: grid;
+  font-size: 1.3rem;
+  justify-content: center;
+  min-height: 4rem;
+  width: 20%;
+  margin-left: 7rem;
+  color: white;
 }
-.arrowTop:hover{
-    color: white;
-    font-size: 2.1rem;    
-    transition: all .2s ease-out;
-    text-decoration: none;
+.arrowTop:hover {
+  color: white;
+  font-size: 2.1rem;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
 }
-.icon{
-    font-size: 1.7rem;
-    margin-left: 2rem;
-    color: white;
+.icon {
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  color: white;
 }
-.icon:hover{
-    color: lime ;
-    transition: all .3s ease-out;
-    text-decoration: none;
+.icon:hover {
+  color: lime;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
 }
-.footerText{
-    color: grey;
+.footerText {
+  color: grey;
 }

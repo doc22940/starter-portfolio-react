@@ -1,40 +1,33 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav } from 'react-bootstrap';
 import './Style.css';
 import Fade from 'react-reveal/Fade';
 
 
 function Header() {
 
-    function scroll(a) {
-        const anchor = document.querySelector(a)
-        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
-    }
+
 
     return (
 
         <section id="home" className="headerClass">
 
             <div className="container-fluid">
-                <div className="navClass">
-                    <Navbar bg="transparent" expand="md">
-                        <Navbar.Toggle className='navToggler' aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="ml-auto" style={{ minHeight: '3rem' }}>
 
-                                <Nav.Link onClick={() => { scroll('#about') }} id="navabout">About</Nav.Link>
-                                <Nav.Link onClick={() => { scroll('#projects') }} id="navprojects">Projects</Nav.Link>
-                                <Nav.Link onClick={() => { scroll('#contact') }} id="navcontact">Contact</Nav.Link>
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Navbar>
-                </div>
+
+
 
                 <Fade delay={1300} cascade>
                     <div className="intro">
                         <h1 className="introHead" style={{ fontSize: '3.5rem' }}>Hello, I'm Arif Mohammed</h1>
                         <h4>Developer</h4>
+                    </div>
+                </Fade>
+                <Fade delay={1800} bottom duration={1400}>
+                    <div className="row socialFooter">
+                        <a className="icon" rel="noopener noreferrer" target="_blank" href="https://github.com/arifmohammedpf" style={{ margin: '0rem' }}><i className='fab fa-github'></i></a>
+                        <a className="icon" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/arifmohammedpf"><i className='fab fa-linkedin'></i></a>
+                        <a className="icon" rel="noopener noreferrer" target="_blank" href="mailto:arifmohammedofficial@gmail.com"><i className='fab fa-google'></i></a>
+                        <a className="icon" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/arifmuhammed_0"><i className='fab fa-instagram'></i></a>
                     </div>
                 </Fade>
             </div>
