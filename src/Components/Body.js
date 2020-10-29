@@ -24,19 +24,19 @@ class Body extends Component {
                     <Fade duration={2000}>
                         <div className="container-fluid p-0 pl-4">
                             <h1 style={{ textAlign: 'center', fontSize: '3rem' }} >ABOUT ME</h1>
-                            <div className="row aboutRow col-12 mt-5">
-                                <div className="aboutPic col-12 col-md-4 col-xl-3 ml-auto">
+                            <div className="row aboutRow col-12 mt-5"   >
+                                <div className="aboutPic col-12 col-md-4 col-xl-3 ml-5">
                                     <Fade duration={1500} left cascade>
-                                        <img id="profPic" src={propic} alt="Arif" />
+                                        <img id="profPic" src={propic} alt="Arif Mohammed" />
                                     </Fade>
                                 </div>
                                 <div className="aboutContent col-12 col-md-6">
                                     <Fade right >
-                                        <p>I'm currently pursuing B.tech in KMEA Engineering College, Edathala.<br/>
-                                        Even though I'm not good in academics; by watching tutorials<br/> and practicing codes,
-                                        I always try to become a good developer.<br/> Till now I have gained knowledge in Android Studio (Java),
-                                        <br/>Windows Forms (C#) using Visual Studio and SQL Management Studio,<br/>HTML5, Bootstrap, CSS, JavaScript.
-                                        As of now, I'm learning React, <br/>and this website is my first practice.</p>
+                                        <p>I'm currently training myself to be a Full Stack Developer, and pursuing B.tech from KMEA Engineering College, Edathala.
+                                        I have a great passion for coding. Watching tutorials and practicing codes,
+                                        I always dive to be a good developer. Till now I have gained knowledge in Android Studio (Java),
+                                        Windows Forms (C#) using Visual Studio and SQL Management, HTML5, Bootstrap, CSS, JavaScript.
+                                        As of now, I'm learning React, will be a MERN Developer within no time.</p>
                                     </Fade>
                                 </div>
                             </div>

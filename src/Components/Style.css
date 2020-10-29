@@ -24,6 +24,7 @@
 }
 .aboutRow {
   min-height: 24rem;
+  justify-content: center;
 }
 .aboutPic {
   margin-bottom: 2rem;
