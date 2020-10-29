@@ -1,5 +1,4 @@
 import React from 'react';
-import './Style.css';
 import Fade from 'react-reveal/Fade';
 
 

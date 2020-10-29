@@ -12,33 +12,6 @@
   padding-top: 2rem;
 }
 
-.navToggler {
-  background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-}
-#navabout {
-  color: white;
-  font-size: 1.1rem;
-}
-#navprojects {
-  color: white;
-  font-size: 1.1rem;
-}
-#navcontact {
-  color: white;
-  font-size: 1.1rem;
-}
-#navabout:hover {
-  color: lemonchiffon;
-  transition: all 0.2s ease-out;
-}
-#navprojects:hover {
-  color: lemonchiffon;
-  transition: all 0.2s ease-out;
-}
-#navcontact:hover {
-  color: lemonchiffon;
-  transition: all 0.2s ease-out;
-}
 .intro {
   text-align: center;
   margin-top: 10rem;
