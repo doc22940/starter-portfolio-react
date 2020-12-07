@@ -33,7 +33,7 @@ class Body extends Component {
                                 <div className="aboutContent col-12 col-md-6">
                                     <Fade right >
                                         <p>I'm currently training myself to be a Full Stack Developer, and pursuing B.tech from KMEA Engineering College, Edathala.
-                                        I have a great passion for coding. Watching tutorials and practicing codes,
+                                        I have a great passion for programming. Watching tutorials and practicing codes,
                                         I always dive to be a good developer. Till now I have gained knowledge in Android Studio (Java),
                                         Windows Forms (C#) using Visual Studio and SQL Management, HTML5, Bootstrap, CSS, JavaScript.
                                         As of now, I'm learning React, will be a MERN Developer within no time.</p>

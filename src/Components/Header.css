@@ -1,0 +1,19 @@
+.headerClass {
+  height: 100vh;
+  background: linear-gradient(rgba(7, 10, 12, 0.72), rgba(7, 10, 12, 0.72)),
+    url("./images/homeBg.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding-top: 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 10rem;
+}
+.introHead {
+  font-size: 3.5rem;
+}

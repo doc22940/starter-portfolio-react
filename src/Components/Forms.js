@@ -41,13 +41,13 @@ function ContactForms() {
                 <Form onSubmit={handleSubmit(onSubmit)}>
 
                     <Form.Group>
-                        <Form.Label>Name</Form.Label>
+                        <Form.Label>NAME</Form.Label>
                         <Form.Control name="name" placeholder="Your Name" ref={register({ required: true, maxLength: 78 })} />
                         {errors.name && <p id="errorPara">This is required</p>}
                     </Form.Group>
 
                     <Form.Group>
-                        <Form.Label>Email address</Form.Label>
+                        <Form.Label>EMAIL</Form.Label>
                         <Form.Control name='email' type="email" placeholder="Your email" ref={register({ required: true })} />
                         <Form.Text className="text-muted">
                             I'll never share your email with anyone else.
@@ -56,11 +56,12 @@ function ContactForms() {
                     </Form.Group>
 
                     <Form.Group>
+                        <Form.Label>MESSAGE</Form.Label>
                         <Form.Control name='message' as="textarea" rows="3" placeholder="Write..." ref={register({ required: true })} />
                         {errors.message && <p id="errorPara">This is required</p>}
                     </Form.Group>
 
-                    <Button type="submit">Submit</Button>
+                    <Button block type="submit">Submit</Button>
 
                 </Form>
             </Fade>

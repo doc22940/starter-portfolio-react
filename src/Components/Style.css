@@ -1,22 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
 
-.headerClass {
-  height: 100vh;
-  background: linear-gradient(rgba(7, 10, 12, 0.72), rgba(7, 10, 12, 0.72)),
-    url("./images/homeBg.jpg");
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  padding-top: 2rem;
-}
-
-.intro {
-  text-align: center;
-  margin-top: 10rem;
-}
-
 .aboutMe {
   background: linear-gradient(rgb(63, 74, 118), rgb(13, 22, 72));
   padding-top: 5rem;
@@ -64,11 +47,11 @@
   min-width: 6rem;
   padding: 2rem;
   margin-right: 1rem;
+  transition: all ease-out 0.5s;
 }
 .cardDiv:hover {
   background: #000;
   opacity: 0.8;
-  transition: ease-out 0.4s;
 }
 .proRow {
   min-height: 24rem;
@@ -93,6 +76,8 @@
 }
 .contactDescription {
   margin-bottom: 2rem;
+  place-self: center;
+  font-size: 6rem;
 }
 
 #errorPara {
