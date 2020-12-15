@@ -5,17 +5,11 @@ import './Header.css';
 
 function Header() {
 
-
-
     return (
 
         <section id="home" className="headerClass">
 
-            <div className="container-fluid">
-
-
-
-
+            <div className="container-fluid headerDiv">
                 <Fade delay={1300} cascade>
                     <div className="intro">
                         <h1 className="introHead">Hello, I'm Arif Mohammed</h1>

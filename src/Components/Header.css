@@ -9,10 +9,12 @@
   background-attachment: scroll;
   padding-top: 2rem;
 }
-
+.headerDiv {
+  position: relative;
+  top: 40%;
+}
 .intro {
   text-align: center;
-  margin-top: 10rem;
 }
 .introHead {
   font-size: 3.5rem;
