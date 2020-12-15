@@ -81,7 +81,7 @@
 }
 
 #errorPara {
-  color: #bf1650;
+  color: #bfc935;
 }
 #errorPara::before {
   display: inline;
