@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
 
 
 class SecProj extends Component {
@@ -24,17 +23,23 @@ class SecProj extends Component {
         return (
 
             <div className="container-fluid">
-                <Fade duration={2000} >
-                    <h1 id="projectTitle">Projects</h1></Fade>
-                <Fade left cascade>
-                    <div className="row proRow">
-                        {pro}
-                    </div>
-                </Fade>
+
+                <h1 id="projectTitle">PROJECTS</h1>
+
+                <div className="row proRow"
+                    data-aos="flip-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                    data-aos-once="false"
+                    data-aos-mirror="true"
+                >
+                    {pro}
+                </div>
+
             </div>
 
         );
     }
-    
+
 }
 export default SecProj;

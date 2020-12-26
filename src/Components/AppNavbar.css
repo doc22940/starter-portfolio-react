@@ -24,14 +24,14 @@
   font-size: 1.1rem;
 }
 #navabout:hover {
-  color: lemonchiffon;
+  color: #fdb827;
   transition: all 0.2s ease-out;
 }
 #navprojects:hover {
-  color: lemonchiffon;
+  color: #fdb827;
   transition: all 0.2s ease-out;
 }
 #navcontact:hover {
-  color: lemonchiffon;
+  color: #fdb827;
   transition: all 0.2s ease-out;
 }
